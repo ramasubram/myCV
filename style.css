@@ -1,0 +1,216 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: black;
+    margin: 10mm;
+    padding: 20mm;
+}
+h1 {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+.sub-page {
+    margin: 20mm;
+    padding: 20mm;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    width: 70%;
+    padding: 20px;
+    align-content: center;
+}
+.shadow {
+    text-shadow: 2px 2px blue;
+}
+.menu-left {
+    height: 90%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0%;
+    left: 2%;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 16px;
+    text-align: left;
+}
+.menu-right {
+    width: 200px;
+    height: 40%;
+    position: fixed;
+    z-index: 2;
+    right: 5%;
+    background-color: #111;
+    overflow-x: hidden;
+    top: 35%;
+    font-size: large;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.menu-left a, .menu-right a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+}
+  
+.menu-left a:hover, .menu-right a:hover {
+    color: #f1f1f1;
+}
+.menu-left-item {
+    display: block;
+    background-color: black;
+    list-style-type: none;
+    padding: 15px 5px;
+    font-size: 20px;
+    color: #818181;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .08);
+    text-align: left;
+    text-decoration: none;
+    height: 75px;
+    margin: 3px;
+    width: 150px;
+}
+.menu-left-item:hover{
+    color: lightskyblue;
+}
+.bordercolor-green {
+    border: 3px solid greenyellow;
+}
+.bordercolor-pink {
+    border: 3px solid deeppink;
+}
+.bordercolor-yellow {
+    border: 3px solid yellow;
+}
+.bordercolor-blue {
+    border: 3px solid blue;
+}
+.bordercolor-orange {
+    border: 3px solid orangered;
+}
+.main-content {
+    flex: 3;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.text-content {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    margin-right: 200px; /* Same as the width of the sidenav */
+    margin-top: 1%;
+    padding: 0px 5px;
+    border: 1px solid yellowgreen;
+    height: 380px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.text-container {
+    position: absolute;
+    display: inline-block;
+    color: ghostwhite;
+    background-color: black;
+    flex-wrap: wrap;
+    text-align: justify;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: x-large;
+    margin: 5mm;
+    padding: 5mm;
+    left: 39%;
+    width: 55%;
+    height: 75%;
+    overflow: auto;
+}
+.image-container {
+    background-color: black;
+    position: absolute;
+    display: inline-block;
+    margin: 5mm 2mm;
+    padding: 5mm 2mm;
+    vertical-align: middle;
+    width: 38%;
+    height: 75%;
+    overflow: auto;
+}
+.lightblue-text{
+    color: lightskyblue;
+    border: 1px solid oldlace;
+    flex-wrap: wrap;
+    text-align: left;
+    text-decoration: none;
+    font-size: large;
+    margin: 5mm;
+    padding: 5mm;
+    width: 85%;
+    height: auto;
+    line-height: 25px;
+}
+.lightblue-text li{
+    background-color: slategray;
+}
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+/* CSS for the footer */
+
+footer {
+   background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+.social-media-container {
+    width: 100%;
+    position: relative;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.icon-list {
+    width: 40%;
+    padding-top: 5px;
+    position: absolute;
+    left: 40%;
+    list-style-type: none;
+}
+
+.icon-list-item {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.fa {
+    max-width: 50px;
+    color: #23acce;
+    transition: color 150ms;
+}
+
+.fa:hover {
+    color: white;
+}
+
+.fa-arrow-circle-o-right {
+    margin-right: 5px;
+}
+
+.fa-arrow-circle-o-right:hover, .questions-list-item i:hover {
+    color: white;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="sv-SE">
+
+    <head>
+        <title>Rama Subrahmanien</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i,900"
+            media="all">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body>
+        <!--Menu-->
+        <header id="header">
+            <div class="menu-left">
+                <h1>Rama</h1>
+                <ul>
+                    <li><button class="menu-left-item bordercolor-green" onclick="fnPersonal()">Personal Info</button></li>
+                    <li><button class="menu-left-item bordercolor-pink" onclick="fnEducate()">Education</button></li>
+                    <li><button class="menu-left-item bordercolor-yellow" onclick ="fnExperience()">Work Experience</button></li>
+                    <li><button class="menu-left-item bordercolor-blue" onclick ="fnDoing()">Ongoing</button></li>
+                    <li><button class="menu-left-item bordercolor-orange" onclick ="fnAim()">Goal</button></li>
+                </ul>
+            </div>
+            <div class="menu-right">
+                <ul>
+                    <li class="menu-left-item bordercolor-green"><a href="CV.html">Detailed CV</a></li>
+                    <li class="menu-left-item bordercolor-pink"><a href="certificates.html">Certificates</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Main text -->
+        <div id="body-content" class="text-content">
+            <div class="image-container">
+                <img id="displayImage" src="MyPhoto.jpg" alt="Rama Murali" >
+            </div>
+            <div id="displayText" class="text-container">
+                Hi! I am <span class="shadow">Rama Subrahmanien</span>.  I am from <span class="shadow">Chennai, India.</span>
+                Now, I live in <span class="shadow">Helsingborg, Sweden</span> with my husband and two kids.
+                I like to explore places and I just love Sweden for its forests.
+                Waiting for this Covid to vanish so that I can explore more in Europe.
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="social-media-container">
+                <ul class="icon-list">
+                    <li class="icon-list-item">
+                        <a href="mailto:muraliv_ramas@yahoo.com" target="_blank">
+                            <i class="fa fa-3x fa-envelope-square"></i></a></li>
+                    <li class="icon-list-item">
+                        <a href="https://www.facebook.com/rama.murali.14/" target="_blank">
+                            <i class="fa fa-3x fa-facebook-square"></i></a></li>
+                    <li class="icon-list-item">
+                        <a href="https://www.linkedin.com/in/rama-murali-35a47627/" target="_blank">
+                            <i class="fa fa-3x fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+                var toText = "";
+                var tempText = "";
+                tempText = document.getElementById("displayText").innerHTML;
+
+                function fnPersonal(){
+                    let toText = tempText;
+                    document.getElementById("displayText").innerHTML = toText;
+                    document.getElementById("displayImage").src = "myphoto.jpg";
+                }
+                function fnEducate(){
+                    let toText = "Studied M.Sc Computer Science in Bharathiyar University, India.  Studied SFI course C and course D in Komvux Sweden";
+                    document.getElementById("displayText").innerHTML = toText;
+                    document.getElementById("displayImage").src = "upploading.jpg";
+                }
+                function fnExperience(){
+                    let toText = "Worked as a Project Leader - Software Development in India for about 4 1/2 years...  Worked as a Tech Lead in San Jose, USA for 5 1/2 years... ";
+                    document.getElementById("displayText").innerHTML = toText;
+                    document.getElementById("displayImage").src = "experience.jpg";
+                }
+                function fnDoing(){
+                    let toText = "Learning Fundamendals of  Web Development course in Komvux, Helsingborg...";
+                    document.getElementById("displayText").innerHTML = toText;
+                    document.getElementById("displayImage").src = "doing.jpg";
+                }
+                function fnAim(){
+                    let toText = "Want to finish the programming course successfully and then look for a job in IT while gearing up my technical skills. Personally want to see Northern Lights";
+                    document.getElementById("displayText").innerHTML = toText;
+                    document.getElementById("displayImage").src = "goal.jpg";
+                }
+            </script>
+    </body>
+
+</html>
